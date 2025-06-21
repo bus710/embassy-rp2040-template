@@ -1,6 +1,10 @@
 This is a WIP.  
-```
-cargo generate --path ./embassy-rp-template/
+
+```sh
+$ git clone https://github.com/bus710/embassy-rp2040-template.git
+$ cargo install cargo-generate
+$ cargo generate --path ./embassy-rp2040-template/
+
 🤷   Project Name: test-a
 🔧   Destination: test-a ...
 🔧   project-name: test-a ...
