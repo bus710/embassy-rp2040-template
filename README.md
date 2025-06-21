@@ -1,3 +1,5 @@
+# Embassy RP2040 template
+
 This is a WIP.  
 
 ```sh
@@ -34,3 +36,9 @@ Memory Config
 💡   Initializing a fresh Git repository
 ✨   Done! New project created test-a
 ```
+
+## To update the versions
+
+Embassy-rs libraries' version can be found in the [repo](https://github.com/embassy-rs/embassy). Each version may vary. When the [executor's version](https://github.com/embassy-rs/embassy/blob/main/embassy-executor/Cargo.toml) is 0.7.0, the other libraries can be 0.4.0. 
+
+If you see there is any error even after all the [dependencies](./Cargo.toml) got updated, the [toolchain file](./rust-toolchain.toml) can be used to point something older version of rust toolchain.
