@@ -60,6 +60,6 @@ debug = 2
 # Below configs are here to mute the rust-analyzer error.
 # "Can't find crate for 'test'" as this is a no_std project
 [[bin]]
-name = "app"
+name = "{{project-name}}"
 test = false
 bench = false
