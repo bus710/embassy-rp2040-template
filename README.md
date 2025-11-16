@@ -13,13 +13,16 @@ Embassy docs:
 
 Embassy repo:
 - https://github.com/embassy-rs
-- https://github.com/embassy-rs/embassy/tree/main/docs/examples/basic - a basic standalone example for nRF
 - https://github.com/embassy-rs/embassy/tree/main/examples/rp - an rp2040 example
-- https://github.com/embassy-rs/embassy/tree/main/examples/rp/src/bin/blinky.rs - the blinky for rp2040
+- https://github.com/embassy-rs/embassy/tree/main/examples/rp/src/bin/blinky.rs - the blinky for pico
+- https://github.com/embassy-rs/embassy/tree/main/examples/rp/src/bin/wifi_blinky.rs - the blinky for pico w
 
 <br/>
 
 ## Steps
+
+How to use the template to generate a new project and flash into a target:
+- https://github.com/bus710/embassy-rp2040-template
 
 ```sh
 # Install rustup and probe-rs
