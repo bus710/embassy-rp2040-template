@@ -87,7 +87,9 @@ If you see there is any error even after all the [dependencies](./Cargo.toml) go
 
 ## Troubleshoot
 
-If the build is not going well, remove the `target` directory and `Cargo.lock` file from the template. Also `cargo update` can be helpful
+If the build is not going well:
+- Remove the `target` directory and `Cargo.lock` file from the template. Also `cargo update` can be helpful
+- Use packages/versions from the crate.io in the `Cargo.toml`. Packages from git may create conflicts.
 
 <br/>
 
