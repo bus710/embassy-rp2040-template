@@ -1,6 +1,25 @@
 # Embassy RP2040 template
 
-This is a WIP.  
+<br/>
+
+## Links
+
+Embassy docs:
+- https://embassy.dev
+- https://embassy.dev/book
+- https://embassy.dev/book/#_a_basic_embassy_application
+- https://embassy.dev/book/#_starting_a_new_project
+- https://youtu.be/pDd5mXBF4tY - intro to embassy
+
+Embassy repo:
+- https://github.com/embassy-rs
+- https://github.com/embassy-rs/embassy/tree/main/docs/examples/basic - a basic standalone example for nRF
+- https://github.com/embassy-rs/embassy/tree/main/examples/rp - an rp2040 example
+- https://github.com/embassy-rs/embassy/tree/main/examples/rp/src/bin/blinky.rs - the blinky for rp2040
+
+<br/>
+
+## Steps
 
 ```sh
 # Install rustup and probe-rs
@@ -53,12 +72,38 @@ $ cargo build --release
 $ cargo run --bin test-a --release 
 ```
 
+<br/>
+
 ## To update the versions
 
 Embassy-rs libraries' version can be found in the [repo](https://github.com/embassy-rs/embassy). Each version may vary. When the [executor's version](https://github.com/embassy-rs/embassy/blob/main/embassy-executor/Cargo.toml) is 0.7.0, the other libraries can be 0.4.0. 
 
 If you see there is any error even after all the [dependencies](./Cargo.toml) got updated, the [toolchain file](./rust-toolchain.toml) can be used to point something older version of rust toolchain.
 
+<br/>
+
 ## Troubleshoot
 
 If the build is not going well, remove the `target` directory and `Cargo.lock` file from the template. Also `cargo update` can be helpful
+
+<br/>
+
+## Adopt the blinky and other examples
+
+- Basic examples: https://github.com/embassy-rs/embassy/tree/main/docs/examples/basic
+- RP2040 examples: https://github.com/embassy-rs/embassy/tree/main/examples/rp/src/bin
+- RP2040 drivers: https://github.com/embassy-rs/embassy/tree/main/embassy-rp/src
+
+<br/>
+
+## CYW43 firmware
+
+https://github.com/embassy-rs/embassy/tree/main/cyw43-firmware
+
+```sh
+$ cd $PROJECT
+$ mkdir cyw43-firmware
+$ cd cyw43-firmware
+$ wget https://github.com/embassy-rs/embassy/blob/main/cyw43-firmware/43439A0.bin
+$ wget https://github.com/embassy-rs/embassy/blob/main/cyw43-firmware/43439A0_clm.bin
+```
