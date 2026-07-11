@@ -1,5 +1,9 @@
 # Embassy RP2040 template
 
+This is a fork from https://github.com/bentwire/embassy-rp2040-template
+
+I try to update the dependency versions once a quarter.
+
 <br/>
 
 ## Links
